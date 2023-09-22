@@ -34,7 +34,7 @@ console.log(jsUser["full name"]) //Vaibhav Chauhan
 
 /* 
 
-Creating symbol
+Creating symbol datatype
 
 const mySym = SYmbol("Key1")
 
