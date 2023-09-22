@@ -60,3 +60,39 @@ console.log(Object.keys(tinderUser)); //[ 'id', 'name', 'isLoggedIn' ]
 console.log(Object.values(tinderUser)); //[ '123abc', 'Sammy', false ]
 
 console.log(Object.entries(tinderUser)); //[ [ 'id', '123abc' ], [ 'name', 'Sammy' ], [ 'isLoggedIn', false ] ]
+
+
+
+
+
+
+
+//****************************************Object de-structure and JSON API intro*******************************/
+//Lecture-18
+
+
+//suppose we have this data
+const course = {
+    coursename: "js in hindi",
+    price: "999",
+    courseInstructor: "hitesh"
+}
+
+//Now we want to de-structure courseInstructor.
+console.log(course.courseInstructor) //hitesh
+
+//But you have notice that, that's a big syntax 
+//Best and Recommended way to destructure is like this:
+
+const {courseInstructor} = course;
+console.log(courseInstructor);  //hitesh
+
+
+// for changing name to instructure
+// const {courseInstructor: instructor} = course
+
+
+
+//-----https://randomuser.me/
+//-----https://jsonformatter.org/json-viewer
+
