@@ -38,3 +38,36 @@ function loginUserMessage(username){
 }
 
 console.log(loginUserMessage("Vaibhav"))  //Vaibhav just logged in
+
+
+
+
+
+//---------------------------------------Functions with objects & array------------------------------------------------
+
+function calculateCartPrice(...num1){ //This is known as rest operator. Because we are using in parameters.
+    return num1                       //If we use this in object then we can call it as spread operator.
+}
+console.log(calculateCartPrice(200,300,400)) // O/P -  [ 200, 300, 400 ]
+
+
+
+function calculateCartPrice123(val1,val2,...num1){ 
+    return num1                       
+}
+console.log(calculateCartPrice123(200,300,400,500)) // [ 400, 500 ]
+
+
+
+//-------------------------------------------------------------------------------------------------------
+const user = {
+    username: "hitesh",
+    price: 199
+}
+
+function handleObject(anyobject){
+    console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`);
+}
+
+handleObject(user) //calling handle object function.
+
