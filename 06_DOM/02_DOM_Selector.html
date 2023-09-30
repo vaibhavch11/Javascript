@@ -1,0 +1,77 @@
+
+<!-- ------------------------------------------------DOM Selectors----------------------------------------- -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color: #ffff;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div >
+      <h1 id="title" class="heading">DOM Learning on Chai aur Code.</h1>
+
+      <h2>Lorem Ipsum is simply dummy </h2>
+      <h2>Lorem Ipsum is simply dummy </h2>
+      <h2>Lorem Ipsum is simply dummy </h2>
+
+      <p><h2>Lorem Ipsum is simply dummy </h2></p>
+
+      <ul>
+        <li class="list-item">One</li>
+        <li class="list-item">Two</li>
+        <li class="list-item">Three</li>
+      </ul>
+    </div>
+    
+</body>
+</html>
+
+
+
+<!-- 
+    DOM Selectors :-
+
+    document.getElementById('title') 
+    <h1 id="title" class="heading">DOM Learning on Chai aur Code.</h1>
+
+    document.getElementById('title').id
+    'title'
+    
+    document.getElementById('title').className
+    'heading'
+
+    document.getElementById('title').getAttribute('id')
+    'title'
+
+    document.getElementById('title').setAttribute('class', 'test heading') //NOTE: It will overwrite the class component by 'test & heading'.
+
+ -->
+
+
+
+ <!-- Something Interesting is going to start (Adding content) -->
+<!-- 
+
+const title = document.getElementById('title')
+
+title.innerHTML
+'DOM Learning on Chai aur Code.'
+
+title.textContent
+'DOM Learning on Chai aur Code.'
+
+title.innerText
+'DOM Learning on Chai aur Code.' -->
+
+
+
+<!------------------------------------------------ Query Selector --------------------------------------------->

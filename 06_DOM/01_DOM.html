@@ -1,0 +1,58 @@
+
+  <!------------------------------------------------ DOM ---------------------------------------------------->
+  <!-- DOM -> Document Object Model, It represents the structure of an HTML or XML document as a tree-like model -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color: #ffff;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div >
+      <h1 class="heading">DOM Learning on Chai aur Code.</h1>
+    </div>
+    
+</body>
+</html>
+
+
+<!-- 
+                                           HTML
+                                            |
+                                         Document
+                                            |
+                                           HTML
+                                       /         \
+                                     /             \
+                              Head                   Body
+                             /   \                     |
+                            /      \                  div - attribute
+                        title     meta                /  \
+                        |            |               /    \
+                    text node       attribute      H1      P 
+
+
+
+ console.log(document) -> it give's you access to lots of data.
+
+ console.log(getElementById('FirstName'))  -> 
+
+ O/P:
+ <h1 id="firstHeading" class="firstHeading mw-first-heading">
+     <span class="mw-page-title-main">Brendan Eich</span>
+</h1>
+
+
+document.getElementById('firstHeading').innerHTML = "<h1>Vaibhav Bhaiii</h1>"
+O/P: Brendan Eich -> Vaibhav Bhaii
+-->
+
